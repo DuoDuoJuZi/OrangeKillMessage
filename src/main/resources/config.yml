@@ -1,0 +1,17 @@
+Lang:
+  prefix: "§8[§c!§8]"
+  pluginname: "§6Orange§eKill§6Message"
+  Help:
+    main: "§e帮助"
+    set: "§e/kmset set 设置自定义击杀消息"
+    list: "§e/kmlist 设置自定义击杀消息"
+    setother: "§e/kmsetother set 设置其他玩家的自定义击杀消息"
+    reload: "§e/kmreload 重载插件"
+    logogram: "§7/okm可简写为/km"
+  death: "§c你死了"
+  defaultMainTitle: "§c有啥实力啊老弟"
+  defaultKiller: "§6Unknown"
+  nopermission: "§c你没有权限"
+  saveCustomMessages: "§a保存成功！"
+  reload: "§a插件已重载"
+  none: "1"

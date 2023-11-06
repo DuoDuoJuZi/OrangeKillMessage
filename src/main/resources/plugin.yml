@@ -1,0 +1,14 @@
+name: OrangeKillMessage
+version: '${project.version}'
+main: com.orangekillmessage.OrangeKillMessage
+api-version: '1.20'
+commands:
+  okm:
+    description: Your command description here
+    aliases: km
+  okmset:
+    description: Your command description here
+    aliases: kmset
+  okmlist:
+    description: Your command description here
+    aliases: kmlist
