@@ -87,13 +87,6 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/json-simple-1.1.1.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20230618</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/json-20230618.jar</systemPath>
-        </dependency>
     </dependencies>
 
 
