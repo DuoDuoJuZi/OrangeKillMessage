@@ -35,33 +35,32 @@ public class MessageSet implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (command.getName().equalsIgnoreCase("okmset") && strings.length > 1 && strings[0].equalsIgnoreCase("set")) {
-            // 执行 "okm set xxx" 命令的逻辑
             if (commandSender instanceof Player) {
                 Player player = (Player) commandSender;
-                String playerName = player.getName(); // 获取玩家名字
-                String message = strings[1]; // 获取玩家输入的内容
+                String playerName = player.getName(); 
+                String message = strings[1];
 
-                // 检查权限
+
                 if (!player.hasPermission("orangekillmessage.set")) {
                     player.sendMessage(ChatColor.RED + "你没有执行该命令的权限！");
                     return true;
                 }
 
-                // 读取玩家的自定义击杀信息
+
                 JSONArray customMessages = loadCustomMessages();
 
-                // 移除重复的自定义消息
+
                 removeExistingMessage(customMessages, playerName);
 
-                // 创建玩家的自定义消息对象
+              
                 JSONObject playerMessage = new JSONObject();
                 playerMessage.put("name", playerName);
                 playerMessage.put("message", message);
 
-                // 添加新的自定义击杀信息
+               
                 customMessages.add(playerMessage);
 
-                // 将更新后的自定义击杀信息保存到文件中
+          
                 saveCustomMessages(customMessages);
 
                 player.sendMessage(OrangeKillMessage.main.getConfig().getString("Lang.saveCustomMessages"));
