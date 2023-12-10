@@ -8,12 +8,12 @@ import java.io.File;
 public final class OrangeKillMessage extends JavaPlugin {
 
     static OrangeKillMessage main;
-    private FileConfiguration config; // 添加配置变量
+    private FileConfiguration config;
 
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+
         getLogger().info("OrangeKillMessage已加载");
 
         Bukkit.getPluginManager().registerEvents(new PlayerDeath(), this);
@@ -34,7 +34,7 @@ public final class OrangeKillMessage extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
         getLogger().info("OrangeKillMessage已卸载");
     }
 }
