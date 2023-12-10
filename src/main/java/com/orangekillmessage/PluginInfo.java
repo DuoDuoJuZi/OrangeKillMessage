@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
 
 
 public class PluginInfo implements CommandExecutor {
-    //String prefix = ChatColor.DARK_GRAY +"[" + ChatColor.RED + "!" + ChatColor.DARK_GRAY +"]";
+    
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (strings.length == 1 && strings[0].equals("help")) {
